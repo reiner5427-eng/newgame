@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WHALE RIDER — Ocean Grand Prix</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="play-layout">
+<header><a class="brand" href="./">◒ <span>WHALE RIDER</span></a><div class="edition">OCEAN GRAND PRIX <span>01 / CORAL COAST</span></div><button id="sound" aria-label="소리 켜기">SOUND OFF ↗</button></header>
+<main>
+<section class="heading"><div><p class="eyebrow">THE OCEAN IS YOUR RACETRACK</p><h1>바닷속을 가로질러,<br>고래와 함께.</h1><p class="intro">오른쪽으로 헤엄치며 펼쳐지는 바닷속 모험.<br>당신의 고래와 함께 코랄 코스트를 달려보세요.</p></div><div class="course"><span class="live-dot"></span> CORAL COAST <small>맑음 · 수온 24°C · 파도 좋음</small></div></section>
+<section class="game" aria-label="고래 레이싱 게임">
+<canvas tabindex="0" id="ocean" aria-label="위아래 방향키 또는 W와 S로 고래를 조종하세요"></canvas>
+<div class="top-hud"><div class="tag">↗ CORAL COAST <span>1,500m RACE</span></div><div class="live-stats"><span>진주 <b id="pearls">0</b></span><span>기록 <b id="timer">0:00</b></span><button id="fullscreen" aria-label="전체 화면">⛶</button><button id="pause" aria-label="일시 정지" disabled>Ⅱ</button></div></div>
+<div id="welcome" class="overlay"><span class="pill">WELCOME TO THE BLUE</span><h2>고래와 함께<br>바다를 달려요!</h2><p>1,500m 결승점까지! 진주를 모으고 산호 바위를 피하세요.</p><button id="start" class="primary">레이스 시작 <span>↗</span></button><small>↑ ↓ 방향키로 이동 · SPACE 부스트</small></div>
+<div id="result" class="overlay hidden"><span class="pill" id="result-tag">RACE COMPLETE</span><h2 id="result-title">멋진 레이스!</h2><p id="result-copy"></p><button id="restart" class="primary">다시 달리기 <span>↗</span></button></div>
+<div id="feedback" class="feedback" aria-live="polite"></div>
+<div id="pause-label" class="pause-label hidden">PAUSED <small>계속하려면 Ⅱ 또는 P</small></div>
+<div class="bottom-hud"><div class="speed"><strong id="speed">0</strong><span>KM/H</span></div><div class="race-progress"><div><span id="distance">0 m</span><span>FINISH 1,500 m</span></div><div class="track"><i id="progress"></i></div></div><div class="boost"><span>⚡ BOOST <b id="boost-value">100%</b></span><div class="track"><i id="boost-bar"></i></div></div></div>
+<div class="touch-controls"><button id="left" aria-label="위로 이동">↑</button><button id="boost-button" aria-label="부스트">⚡</button><button id="right" aria-label="아래로 이동">↓</button></div>
+</section>
+<div class="image-settings"><span>나만의 바닷속</span><label>고래 사진 선택<input id="whale-file" type="file" accept="image/*"></label><label>바다 사진 선택<input id="ocean-file" type="file" accept="image/*"></label><small>선택한 사진은 이 브라우저에만 저장됩니다.</small></div>
+<section class="guide"><div><span class="guide-number">01</span><div><h3>흐름을 타세요</h3><p>↑ ↓ 또는 W / S 로 수심 조절</p></div></div><div><span class="guide-number">02</span><div><h3>더 빠르게, 더 멀리</h3><p>SPACE 를 누르고 부스트로 질주</p></div></div><div><span class="guide-number">03</span><div><h3>바다를 탐험하세요</h3><p>진주를 모으고 산호 바위를 피하세요</p></div></div></section>
+<footer><span>A LITTLE ADVENTURE, A BIG BLUE WORLD.</span><span>MADE FOR THE OCEAN LOVERS <span class="footer-star">✳</span></span></footer>
+</main><script src="game.js"></script>
+</body></html>

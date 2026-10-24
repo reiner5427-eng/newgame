@@ -1,0 +1,13 @@
+{
+  "name": "whale-rider",
+  "version": "1.0.0",
+  "private": true,
+  "description": "고래와 함께 달리는 바다 레이싱 게임",
+  "scripts": {
+    "start": "node server.cjs",
+    "dev": "node server.cjs",
+    "build": "node build-single.cjs",
+    "build:pages": "node build-pages.cjs",
+    "package": "npm run build && python3 package-game.py"
+  }
+}
